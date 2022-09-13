@@ -27,6 +27,7 @@ local plugin = {
 
 -- handles more initialization, but AFTER the worker process has been forked/created.
 -- It runs in the 'init_worker_by_lua_block'
+-- 初始化的时候 执行一次
 function plugin:init_worker()
 
   -- your custom code here
@@ -63,6 +64,7 @@ end --]]
 
 
 -- runs in the 'access_by_lua_block'
+-- 插件被成功执行才会执行
 function plugin:access(plugin_conf)
 
   -- your custom code here
