@@ -8,8 +8,7 @@ return {
       config = {
         type = "record",
         fields = {
-          { scop = { required = true, type = "array", elements = { type = "string", one_of = { "Healder", "Path", "Query" } } } },
-          { match = { required = true, type = "string" }, },
+          { match_regex = { required = true, type = "string" }, },
           { replace_val = { required = true, type = "string" } }
         }
       }

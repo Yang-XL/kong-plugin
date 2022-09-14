@@ -64,7 +64,7 @@ end --]]
 
 
 -- runs in the 'access_by_lua_block'
--- 插件被成功执行才会执行
+-- 准入
 function plugin:access(plugin_conf)
 
   -- your custom code here
